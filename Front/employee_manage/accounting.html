@@ -1,0 +1,155 @@
+﻿<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale= 1">
+
+    <link rel="stylesheet" href="..\assets\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\assets\css\style.css">
+    <link href=".\assets\css\font-awesome.min.css" rel="stylesheet">
+
+    <script src="..\assets\js\jquery.min.js"></script>
+    <script src="..\assets\js\bootstrap.min.js"></script>
+		<script src="..\assets\js\popper.min.js"></script>
+		<script type="text/javascript" src="..\assets\js\Example.Modal.js"></script>
+
+		<title>Accounting</title>
+	</head>
+<body data-spy="scroll" data-target=".navbar">
+
+	<!-- nav bar (almost similar with main page)-->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top nav-base dark mini-nav static-mini-nav" id="minify-nav">
+		<div class="container">
+			<a class="navbar-brand" href="..\index.html">
+				<img class="toggle-logo logo-blue" src="..\assets\images\B3_Logo_Black.png" alt>
+				<img class="toggle-logo logo-white" src="..\assets\images\B3_Logo_White.png" alt>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navigation">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="..\index.html">Log out<span class="sr-only"></span></a></li>
+					<li class="nav-item"><a class="nav-link" href="..\room_manage\Room.html">Room</a></li>
+					<li class="nav-item"><a class="nav-link" href="..\room_manage\Room_state.html">Room State<span class="sr-only"></span></a></li>
+					<li class="nav-item"><a class="nav-link" href="..\earning_statics\Money.html">Money<span class="sr-only"></span></a></li>
+					<li class="nav-item"><a class="nav-link" href="..\employee_manage\manage_Emp.html">Employee<span class="sr-only"></span></a></li>
+					<li class="nav-item"><a class="nav-link" href="..\reservation\reservation.html">예약신청<span class="sr-only"></span></a></li>
+						<li class="nav-item"><a class="nav-link" href="..\customer_request\customer_request.html">customer request<span class="sr-only"></span></a></li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="section-wrapper contact-page-w">
+		<div class="container">
+			<div class="span12">
+				<div class="white-card extra-padding">
+					<form class="form-transparent no-margin-bottom" id="form-add-comment">
+						<fieldset>
+							<!-- header -->
+							<div class="row">
+								<div class="span4">
+									<div class="table-header">
+										<br>
+										<h3 class="section-header"><strong>Employees Table</strong></h3>
+										<br>
+										<p></p>
+									</div>
+								</div>
+							</div>
+							<!-- table -->
+							<div class="row-fluid">
+								<div class="span12">
+									<table class="type1">
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Attendence</th>
+												<th>Phone Number</th>
+												<th>Department</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>김태오</th>
+												<td>No</th>
+												<td>010-3060-6278</th>
+												<td>Accounting</th>
+											</tr>
+											<tr>
+												<td>유승찬</th>
+												<td>Yes</th>
+												<td>010-2557-2093</th>
+												<td>Accounting</th>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+					<button id="modify">Modify</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Table Modify Modal -->
+	<div id="myModal" class="modal">
+	 <!-- Modal content -->
+		<div class="modal-content">
+			<form action method="post" accept-charset="utf-8">
+				<div class="text-center" style="padding: 15px;">
+					<div class="panel panel-success">
+						<div>
+							<h5>Insert information of the Employees</h5>
+						</div>
+						<div class="panel-body form-horizontal">
+							<div class="form-group">
+								<label for="Name" class="col-sm-3 control-label">Name:</label>
+								<div class="col-sm-9">
+									<input name="Name" class="form-control" type="text" placeholder="Name" autocomplete="off" value>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="Attendence" class="col-sm-3 control-label">Attendence:</label>
+								<div class="col-sm-9">
+									<input name="Attendence" class="form-control" type="text" placeholder="Attendence" autocomplete="off" value>
+								</div>
+							</div><br/>
+							<button id="modify">등록</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<span class="close">&times;</span>
+	</div>
+
+	<script>
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("modify");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on the button, open the modal
+			btn.onclick = function() {
+					modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+					modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+					if (event.target == modal) {
+							modal.style.display = "none";
+					}
+			}
+		</script> -->

@@ -1,0 +1,232 @@
+﻿<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale= 1">
+
+    <link rel="stylesheet" href="..\assets\css\bootstrap.min.css">
+    <link rel="stylesheet" href="..\assets\css\style.css">
+		<link rel="stylesheet" href="..\assets\css\agency.min.css">
+    <link href=".\assets\css\font-awesome.min.css" rel="stylesheet">
+
+    <script src="..\assets\js\jquery.min.js"></script>
+    <script src="..\assets\js\bootstrap.min.js"></script>
+		<script src="..\assets\js\popper.min.js"></script>
+		<script type="text/javascript" src="..\assets\js\Example.Modal.js"></script>
+
+
+
+		<title>Employ Managing</title>
+
+	</head>
+
+
+	<body data-spy="scroll" data-target=".navbar">
+
+		<!-- nav bar (almost similar with main page)-->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top nav-base dark mini-nav static-mini-nav" id="minify-nav">
+			<div class="container">
+				<a class="navbar-brand" href="..\index.html">
+					<img class="toggle-logo logo-blue" src="..\assets\images\B3_Logo_Black.png" alt>
+					<img class="toggle-logo logo-white" src="..\assets\images\B3_Logo_White.png" alt>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navigation">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="../../secure/auth/login.html">Logout<span class="sr-only"></span></a></li>
+						<li class="nav-item"><a class="nav-link" href="..\room_manage\Room.html">Room</a></li>
+						<li class="nav-item"><a class="nav-link" href="..\room_manage\Room_state.html">Room State<span class="sr-only"></span></a></li>
+						<li class="nav-item"><a class="nav-link" href="..\earning_statics\Money.html">Money<span class="sr-only"></span></a></li>
+						<li class="nav-item"><a class="nav-link" href="..\employee_manage\manage_Emp.html">Employee<span class="sr-only"></span></a></li>
+						<li class="nav-item"><a class="nav-link" href="..\reservation\reservation.html">예약신청<span class="sr-only"></span></a></li>
+							<li class="nav-item"><a class="nav-link" href="..\customer_request\customer_request.html">customer request<span class="sr-only"></span></a></li>
+
+
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">department</h2>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" width=200 height=300 src="..\assets\images\security.png" alt="" href="..\reservation\reservation.html">
+            </a>
+            <div class="portfolio-caption">
+              <h4><a href="..\employee_manage\security.html"><font color="black">security</font></a></h4>
+              <!--<p class="text-muted">Illustration</p> -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" src="" alt="">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid"  width=300 height=450 src="..\assets\images\promotion.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4><a href="..\employee_manage\promotion.html"><font color="black">promotion</font></a></h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" width=300 height=450 src="..\assets\images\service.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4><a href="..\employee_manage\service.html"><font color="black">service</font></a></h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" width=300 height=450 src="..\assets\images\account.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4><a href="..\employee_manage\accounting.html"><font color="black">accounting</font></a></h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" width=300 height=450 src="..\assets\images\resource.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4><a href="..\employee_manage\human_resource.html"><font color="black">human resource</font></a></h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img width= 300 height=450 class="img-fluid"  src="..\assets\images\facility.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4><a href="..\employee_manage\facility.html"><font color="black">facillity</font></a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+		<section class="main-footer footer-style-two text-center">
+			<div class="widgets-section">
+				<div class="container">
+					<div class="row clearfix">
+						<!--Footer Column-->
+						<div class="footer-column col-md-4 col-sm-6 col-xs-12">
+							<div class="footer-widget about-widget">
+								<h3 class="has-line-center">
+									"About Us"
+								</h3>
+								<div class="widget-content">
+									<div class="text">
+										"blabla"
+									</div>
+									<ul class="social-links">
+										<li>
+											<a href="">
+												<span class="fa fa-facebook-f">
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<span class="fa fa-facebook-f">
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--End Footer Column-->
+						<!--Footer Column-->
+						<div class="footer-column col-md-4 col-sm-6 col-xs-12">
+							<div class="footer-widget contact-widget">
+								<h3 class="has-line-center">
+									"Contact Us"
+								</h3>
+								<div class="widget-content">
+									<ul class="contact-info">
+										<li>
+											<div class="icon">
+												<span class="ui-computer-screen-2">
+												</span>
+											</div>
+										</li>
+										<li>address</li>
+										<li>phone number</li>
+										<li>email</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--End Footer Column-->
+						<!--Footer Column-->
+						<div class="footer-column col-md-4 col-sm-12 col-xs-12">
+							<div class="footer-widget newsletter-widget">
+								<h3 class="has-line-center">
+									"Newsletter"
+								</h3>
+								<div class="widget-content">
+									<div class="text">blabla again</div>
+									<div class="newsletter-form">
+										<form method="post">
+											<div class="form-group">
+												<input type="email" name="field-name" value placeholder="Your Email" required>
+												<button type="submit" class="send-btn">
+													<span class="fa fa-paper-plane-o">
+													</span>
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--End Footer Column-->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="copyright">
+      <h4 class="text-center"> Copyright 2018. B3Hotel All rights reserved.</h4>
+    </div>
+	</body>
+</html>
